@@ -750,17 +750,22 @@ body.active-login {
 /* loaderSection */
 
 .loaderSection {
+  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 @media (max-width: 576px) {
+  .loaderSection{
+    border: 1px solid green;
+  }
   .topBarSection {
     padding: 0 20px;
   }
-
+  
   .landingSection {
+    
     padding: 0 10px;
   }
 

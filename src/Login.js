@@ -51,8 +51,8 @@ const Login = () => {
                     <input type="password" onChange={changeHandler} name='password' placeholder='Password*' /> <br />
                     {error && <p style={{color:'red'}}>{error}</p>}
                     {loading ? (
-                    <div className="loaderSection">
-                        <div className="loader">Loading..</div>
+                    <div className="">
+                        <p className="loader">Loading..</p>
                         <RotatingLines
                             visible={true}
                             height="36"
