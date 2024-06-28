@@ -1,16 +1,16 @@
 import React, { useState, createContext } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header';
-import Cart from './components/Menu/Cart';
+import Header from './pages/home/Header';
+import Cart from './pages/cart/Cart';
 
 // ROUTES
-import Dashboard from './Dashboard';
-import Signup from './Signup';
-import Login from './Login';
-import Home from './Home';
-import ProductMenu from './components/Menu/ProductMenu';
-import NotFound from './NotFound';
+import Dashboard from './pages/Authentication/Dashboard';
+import Signup from './pages/Authentication/Signup';
+import Login from './pages/Authentication/Login';
+import Home from './pages/home/Home';
+import ProductMenu from './pages/products/ProductMenu';
+import NotFound from './pages/notfound/NotFound';
 
 export const store = createContext();
 

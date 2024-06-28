@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { API_URL } from "../data";
+import { API_URL } from "./data";
 import { Link } from "react-router-dom";
 
 const FirmCollections = () => {
@@ -33,8 +33,8 @@ const FirmCollections = () => {
       <h2>Restaurants with online food delivery in Hyderabad</h2>
       <div className="filterButtons">
         <button onClick={() => filterHandler("All", 'all')} className={activeCategory === 'all' ? 'activeButton' : ''}>All</button>
-        <button onClick={() => filterHandler("South-Indian", 'south-indian')} className={activeCategory === 'south-indian' ? 'activeButton' : ''} >South-Indian</button>
         <button onClick={() => filterHandler("North-Indian", 'north-indian')} className={activeCategory === 'north-indian' ? 'activeButton' : ''} >North-Indian</button>
+        <button onClick={() => filterHandler("South-Indian", 'south-indian')} className={activeCategory === 'south-indian' ? 'activeButton' : ''} >South-Indian</button>
         <button onClick={() => filterHandler("Chinese", 'chinese')} className={activeCategory === 'chinese' ? 'activeButton' : ''} >Chinese</button>
         <button onClick={() => filterHandler("Bakery", 'bakery')} className={activeCategory === 'bakery' ? 'activeButton' : ''} >Bakery</button>
       </div>
@@ -49,15 +49,18 @@ const FirmCollections = () => {
                   <div className="zoomEffect">
 
                     <div className="firm-group-container">
+                        <div className="firm-offer-box">
                         <img src={`${API_URL}/uploads/${item.image}`} alt={item.firmName} />
-                        <div className="firm-offer">{item.offer}</div>
-                        <div className="firmDetails">
+                        <h1 className="firm-offe">{item.offer}</h1>
+                        </div>
+                    </div>
+                    <div className="firmDetails">
                         <strong>{item.firmName}</strong>
                         <br />
                         <div className="firmArea">{item.region.join(", ")}</div>
                         <div className="firmArea">{item.area}</div>
                         </div>
-                    </div>
+
                   </div>
                 </Link>
               );

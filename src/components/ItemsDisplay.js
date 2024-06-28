@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { itemData } from '../data';
+import { itemData } from './data';
 
 const ItemsDisplay = () => {
   const [displayItem, setDisplayItem] = useState(itemData);

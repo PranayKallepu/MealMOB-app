@@ -76,7 +76,7 @@ const Footer = () => {
         {/* Social ICONS */}
         <div className='social-icons'>
           <p>
-            2024 Bryt Tech Tips. LLC. All rights reserved.
+            All rights reserved by Pranay Kallepu 2024.
           </p>
           <div>
           {items.map((item, index) => (

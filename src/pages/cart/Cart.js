@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { API_URL } from "../data";
+import { API_URL } from "../../components/data";
 // import './cart.css'
 
 const Cart = ({ cart, setCart, handleChange }) => {

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { API_URL } from "../data";
+import { API_URL } from "../../components/data";
 import { Link, useParams } from "react-router-dom";
 import { MdStar } from "react-icons/md";
 import { RotatingLines } from 'react-loader-spinner';
-import Footer from "../Footer";
+import Footer from "../home/Footer";
 import { FaPlus } from "react-icons/fa";
 
 const ProductMenu = ({ handleClick, cart }) => {

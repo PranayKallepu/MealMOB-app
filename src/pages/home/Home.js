@@ -1,12 +1,12 @@
 import React, { useContext, useEffect } from 'react';
-import { store } from './App';
+import { store } from '../../App';
 import { Navigate } from 'react-router-dom';
 import axios from 'axios';
 // components
-import ItemsDisplay from './components/Menu/ItemsDisplay';
-import Chains from './components/Menu/Chains';
-import FirmCollections from './components/Menu/FirmCollections';
-import Footer from './components/Footer';
+import ItemsDisplay from '../../components/ItemsDisplay';
+import Chains from '../../components/Chains';
+import FirmCollections from '../../components/FirmCollections';
+import Footer from '../../pages/home/Footer';
 
 const Home = () => {
   const [token] = useContext(store);

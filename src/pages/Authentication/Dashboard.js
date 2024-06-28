@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { store } from './App';
-import logo from './images/M-logo.png';
+import { store } from '../../App';
+import logo from '../../images/M-logo.png'
 
 const Dashboard = () => {
   const [token] = useContext(store);

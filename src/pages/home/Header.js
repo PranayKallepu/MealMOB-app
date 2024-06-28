@@ -1,6 +1,6 @@
 import React, {  useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../images/M-logo.png';
+import logo from '../../images/M-logo.png';
 import { FaCartPlus } from "react-icons/fa";
 // import { store } from '../App'; // import the context
 
